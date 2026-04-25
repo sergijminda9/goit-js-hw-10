@@ -14,6 +14,8 @@ const secondsEl = document.querySelector('[data-seconds]');
 let userSelectedDate = null;
 let timerId = null;
 
+startBtn.disabled = true;
+
 function addLeadingZero(value) {
   return String(value).padStart(2, '0');
 }
